@@ -63,7 +63,7 @@ const movies = [
 const MovieList = () => {
   return(
       <ul>
-        {movies.map( movie => <MovieCard movie={movie}/> )}
+        {movies.map( movie => <MovieCard movie={movie} key={movie.id}/> )}
       </ul>
   );
 };
